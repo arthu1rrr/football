@@ -45,8 +45,7 @@ def validate_rolespec(rolespec,data_columns,feature_columns):
 
         
 
-        - all final_features are standardised (ends with _z)
-
+       
     """
     if not isinstance(rolespec.role_name, str) or not rolespec.role_name:
         raise ValueError("role_name must be a non-empty string")
@@ -81,6 +80,4 @@ def validate_rolespec(rolespec,data_columns,feature_columns):
 
     
 
-    for feat in rolespec.final_features:
-        if not feat.endswith("_z"):
-            raise ValueError(f"final_feature {feat} is not standardised (does not end with _z)")
+    
