@@ -1,6 +1,6 @@
 import pandas as pd
-from cleanup import cleanup
-from add_zscores import add_zscores
+from role_similarity.pipeline.cleanup import cleanup
+from role_similarity.pipeline.add_zscores import add_zscores
 df = pd.DataFrame({
 # identifiers
 "player_id": [1, 2],

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run add_zscores (module)",
+      "type": "python",
+      "request": "launch",
+      "module": "role_similarity.pipeline.pipelinetest",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

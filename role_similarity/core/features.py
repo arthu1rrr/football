@@ -139,7 +139,7 @@ def add_z_standardisation(
         stat_values = pd.to_numeric(out[stat], errors="coerce").astype(float) #convert stat to numeric
         valid = ~stat_values.isna() #identify valid (non-NaN) entries
         mean = stat_values[valid].mean() #calculate mean for valid entries
-        std = stat_values[valid].std() #calculate std for valid entries
+        std = stat_values[valid].std(ddof=0) #calculate std for valid entries
         z_scores = np.full(len(out), np.nan) #initialize z-scores array with NaNs
         z_scores[valid.to_numpy()] = (stat_values[valid] - mean) / std #calculate z-scores only for valid entries
         out[f"{stat}_z"] = z_scores #add new z-score column to DataFrame
