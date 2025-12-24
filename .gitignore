@@ -1,0 +1,27 @@
+# Data
+data/
+*.csv
+*.parquet
+*.feather
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+projects/**/outputs/
+*.png
+*.pdf
+
+# Secrets
+.env
