@@ -7,7 +7,7 @@ Identifiers Required:
     competition (prem/champ)
     season (all current so irrelevant at the moment)
 player_id generation:
-    TODO
+    start from 1, increment for each subsequent player
 include:
     minutes (p90s computed later during processing)
     pos_primary 
