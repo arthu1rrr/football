@@ -61,3 +61,4 @@ TRANSFORM_POLICY = {
     },
 }
 VALID_POSITIONS = ['ST','LW','RW','CF','CAM','CM','CDM','LWB','RWB','LB','RB','CB','GK']
+IDENTIFIERS = ['player_id','player_name','season','league','team','primary_position']
